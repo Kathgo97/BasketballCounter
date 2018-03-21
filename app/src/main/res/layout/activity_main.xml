@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.uca.relativelayout.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="2"
+     android:gravity="center"
+     android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/ta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="25sp"
+        android:padding="20dp"
+        />
+
+     <TextView
+         android:id="@+id/cont1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:gravity="center"
+         android:textSize="50sp"
+         android:padding="20dp"/>
+
+
+
+     <Button
+        android:id="@+id/button_uno"
+        android:onClick="uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        />
+
+    <Button
+        android:id="@+id/b_dosa"
+        android:onClick="dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2" />
+
+    <Button
+        android:id="@+id/button_tres"
+        android:onClick="tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3" />
+
+ </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        >
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textSize="25sp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/cont2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:padding="20dp"/>
+
+
+
+        <Button
+            android:id="@+id/b_unob"
+            android:onClick="unob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            />
+
+        <Button
+            android:id="@+id/b_dosb"
+            android:onClick="dosb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2" />
+
+        <Button
+            android:id="@+id/b_tresb"
+            android:onClick="tresb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+3" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/b_reset"
+            android:onClick="reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor:Katherine Ivania Gomar Aguilar"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
